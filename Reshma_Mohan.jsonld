@@ -1,0 +1,114 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "Reshma_Mohan"
+    },
+    "motivations": {
+      "@value": "My three-year journey with Cardano has ignited a passion that continues to grow. As a software developer and Cardano enthusiast, I'm motivated by:\n\n1. A deep-seated belief in Cardano's vision to democratize finance and empower communities worldwide, coupled with a desire to contribute my technical knowledge and community-building experience to its global governance process.\n\n2. The excitement of being at the forefront of decentralized governance, shaping the future of this promising blockchain ecosystem while representing diverse perspectives from Cardano communities around the world.\n\n3. A passion for educating new participants globally and bridging cultural and technological gaps, fostering greater understanding and collaboration within the international Cardano community.\n"
+    },
+    "objectives": {
+      "@value": "As a DRep, I aim to contribute to Cardano's global governance and community growth by:\n\n1. Leveraging my experience as a DRep Pioneer workshop leader to educate and engage participants worldwide, while applying technical expertise to evaluate proposals that enhance Cardano's ecosystem.\n\n2. Ensuring transparent, informed voting on CIPs and governance matters, providing clear rationales and advocating for proposals aligning with Cardano's principles of decentralization, sustainability, and inclusivity.\n\n3. Acting as a bridge between diverse Cardano communities, representing a wide range of interests in the global governance process and promoting initiatives that foster innovation and development on the Cardano platform."
+    },
+    "paymentAddress": {
+      "@value": "addr1q9u9untffl23m9c4gmym4j55gjgv8eexavvnpp2dxcrp6um4d49l4400v4tpp7txudwlak0rpzxmhgzj8kl698w7slcq5s24uz"
+    },
+    "qualifications": {
+      "@value": "Technical Proficiency: Plutus Pioneer Program graduate and an active Cardano developer.\n\nCommunity Engagement & Governance Experience: Served as community ambassador for Genius Yield, technical writer for Genius Academy, and DRep Pioneer workshop leader, training over 40 individuals from diverse countries including India, Ghana, South Africa, Kenya, Congo, Singapore, Germany, and Dubai.\n\nGlobal Perspective: Experienced in Catalyst funds with successful project completions; engaged with international Cardano community members, understanding diverse needs and viewpoints.\n\nCommunication Skills: Proficient in creating technical content and conducting workshops, adept at explaining complex concepts to varied audiences.\n\nCommitment to Transparency & Continuous Learning: Dedicated to providing clear explanations for all voting decisions and staying updated with Cardano's technological advancements and governance discussions."
+    },
+    "references": [
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "X"
+        },
+        "uri": {
+          "@value": "https://x.com/reshmhn"
+        }
+      },
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "LinkedIn"
+        },
+        "uri": {
+          "@value": "www.linkedin.com/in/reshmakm"
+        }
+      },
+      {
+        "@type": "Identity",
+        "label": {
+          "@value": "LinkedIn"
+        },
+        "uri": {
+          "@value": "www.linkedin.com/in/reshmakm"
+        }
+      },
+      {
+        "@type": "Identity",
+        "label": {
+          "@value": "X"
+        },
+        "uri": {
+          "@value": "https://x.com/reshmhn"
+        }
+      }
+    ]
+  }
+}
