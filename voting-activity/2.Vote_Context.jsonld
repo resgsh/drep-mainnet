@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "body": {
+    "comment": "As a Drep, I believe this Cardano Constitution is an important step for the network's governance, but I approach it with some caution. I recognise the effort that went into drafting this document, including the global workshops and feedback from many community members. However, there are some aspects of the process and the constitution itself that remain controversial. There are concerns about whether the process was truly inclusive and if all voices were heard. Even though most delegates have approved it, I feel there are still areas that could be improved.\n\nThat said, I understand that no governance system is perfect right from the start, and the constitution allows for future amendments. I see this as a necessary step in the evolution of Cardano's governance and as an important move towards empowering all ada holders. My vote reflects confidence in the ongoing process to improve governance, but I also recognise that this is just one part of a much longer journey.\n\nWe are venturing into uncharted waters. Let’s face the waves with our sails set high, embracing the wind and tide as they carry us toward new shores and discoveries."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
