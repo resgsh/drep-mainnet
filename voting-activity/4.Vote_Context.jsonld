@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "I am voting YES because this proposal strengthens an already functional and essential governance platform—GovTool—through clear, community-led improvements.\n\nIt enhances user experience and reliability based on real feedback, and introduces dedicated development across key governance areas: proposals, delegation, voting, outcomes, and budget discussions. It also adds full end-to-end testing and continues to follow an open, transparent development model.\n\nGovTool is vital for inclusive governance—without it, participation risks becoming fragmented or limited to closed systems. This proposal ensures continued access, usability, and clarity for all Ada holders.\n\nThe platform’s open-source nature offers ecosystem-wide benefits. Its code and APIs are already used by other tools, and ₳250k is earmarked to support external contributors and open governance tools building on it.\n\nFunding is structured through tiered levels and smart contracts, ensuring transparency, cost-efficiency (nearly 50% lower than earlier proposals), and responsible allocation. Unused funds will return to the Treasury.\n\nFor these reasons—continued platform improvement, increased governance efficiency, and ecosystem-wide open-source value—I strongly support this proposal and vote YES.\n"
+  },
+  "hashAlgorithm": "blake2b-256"
+}
