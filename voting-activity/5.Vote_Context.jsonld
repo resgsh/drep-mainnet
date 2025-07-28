@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "\nOverall Rationale for Voting on Treasury Withdrawals\n\nAs a DRep participating in on-chain governance under the Voltaire framework, I have reviewed each of the 39 treasury withdrawal proposals currently up for vote.\n\nThis document outlines my generic voting rationale. My vote on each individual proposal—whether Yes, No, or Abstain—has been guided by the following considerations:\n\nWhen I Voted Yes\n\nI have supported proposals that clearly satisfy all of the following:\n\n1. Relevance\n   The proposal addresses a clear and meaningful need in the Cardano ecosystem—whether it is developer tooling, community infrastructure, governance, or research.\n\n2. Reasonableness of Budget\n   The requested amount is proportional to the scope and deliverables. Proposals that show cost breakdowns and attempt to maximise value for money are given priority.\n\n3. Credibility of the Team\n   Preference is given to teams with a proven history of delivery in the Cardano ecosystem, open-source contributions, or community engagement. In case of newer teams, supporting references or associations are considered.\n\n4. Alignment with Voltaire Governance Goals\n   In the Voltaire era, legitimate, transparent use of the treasury is essential. I support proposals that help establish or strengthen governance processes and infrastructure.\n\nWhen I Voted No or did not vote\n\nI have voted No where one or more of the above criteria are not met, such as:\n\n* Lack of clarity or relevance to Cardano’s needs\n* Justification regarding budgets\n* Weak or unknown team background\n* Vague deliverables or lack of public transparency\n\nIn some cases, proposals may be promising but are premature or underdeveloped at this stage.\n\nWhen I Abstained\n\nI have chosen to Abstain when:\n\n* The proposal shows potential but lacks enough information for a confident decision\n* There are mixed signals—e.g., a good idea but poor planning, or credible team but vague milestones\n* There may be overlap with other initiatives already underway\n\nSummary\n\nThis is a generic decision-making framework I have followed across all 39 proposals. Votes are cast independently for each proposal, and the default is not Yes. Instead, each proposal must make a clear case on its own merits.\n\nI remain open to feedback and discussion from delegators or community members regarding any specific vote.\n\n\n\nList of Proposals and My Vote\n\nMLabs Core Tool Maintenance & Enhancement: Cardano.nix - 45,217 ADA - Yes\nMidgard - Optimistic Rollups administered by Intersect - 2,162,096 ADA - Yes\n2025 Input Output Engineering Core Development Proposal - 96,817,080 ADA - Yes\nBlockfrost Platform community budget proposal - 1,300,000 ADA - Yes\nHardware Wallets Maintenance administered by Intersect - 424,800 ADA - Yes\nPallas: Sustaining Critical Rust Tooling for Cardano - 220,914 ADA - Yes\nUTxO RPC: Sustaining Cardano Blockchain Integration - 220,914 ADA - Yes\nLucid Evolution Maintenance administered by Intersect - 130,903 ADA - Yes\nzkFold ZK Rollup administered by Intersect - 1,161,000 ADA - Yes\nDolos: Sustaining a Lightweight Cardano Data Node - 220,914 ADA - Yes\nLedger App Rewrite administered by Intersect - 300,000 ADA - Yes\nComplete Web3 developer stack to make Cardano the smart contract layer for Bitcoin - 600,000 ADA - No\nOSC Budget Proposal - Paid Open Source Model for Sustainable Development - Not specified - Yes\nGerolamo - Cardano node in typescript - 578,571 ADA - Abstain\nMLabs Core Tool Maintenance & Enhancement: Plutarch - 243,478 ADA - Abstain\nTWEAG's Proposals for multiple core budget project... - 11,070,323 ADA - No\nCexplorer.io -- Developer-Focused Blockchain Explorer... - 266,667 ADA - Yes\nA free Native Asset CDN for Cardano Developers - 605,000 ADA - Yes\nAdaStat.net Cardano blockchain explorer - 212,000 ADA - Yes\nA MBO for the Cardano ecosystem: Intersect - 15,750,000 ADA - Yes\nBeyond Minimum Viable Governance: Iteratively Improving on Cardano Voltaire - Not specified - Yes\nCatalyst 2025 Proposal by Input Output - 69,459,000 ADA - Yes\nInput Output Research (IOR): Cardano Vision - Wor... - 26,840,000 ADA - Yes\nBloxBean Java Tools Maintenance and Enhancement - 99,600 ADA - Yes\nCardano Product Committee: Community-driven 2030 Cardano... - 750,000 ADA - Yes\n"
+  },
+  "hashAlgorithm": "blake2b-256"
+}
