@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Why I am voting Yes\nGovTool has already proven itself - over 50,000 people across 170+ countries are actively using it. It works, people rely on it, and it's completely open-source. Without funding, we risk losing this to proprietary alternatives that could fragment the community or put governance behind paywalls.\nThe Money Makes Sense\nThe team isn't asking for blind trust. There's proper oversight with multiple independent organizations checking the work, public dashboards showing where every ada goes, and they're even promising to return unused funds. That's the kind of accountability we should expect.\nIt's Actually Community-Driven\nThe roadmap is based on what the community has been asking for. Things like making it easier for smaller DReps to team up, better voting history so we can see what our DReps actually do, and lowering the barriers for anyone to submit proposals. Plus they're setting aside ₳250,000 to reward contributors and support other governance tools.\nSets a Good Standard\nThis proposal has detailed contracts, milestone-based payments, third-party verification. If we want future treasury withdrawals to be handled professionally, this is the kind of proposal we should be supporting.\nBottom line:- GovTool is already essential infrastructure that's working well. This keeps it running, makes it better, and does it all transparently."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
